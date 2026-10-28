@@ -3058,7 +3058,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 59.69 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3456,7 +3456,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 59.69 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -3854,7 +3854,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 59.69 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4214,7 +4214,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 91.44 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4308,7 +4308,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 91.44 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -4422,7 +4422,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 91.44 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -5592,7 +5592,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 91.44 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -5774,7 +5774,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 59.69 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -7315,7 +7315,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 45.72) (xy 201.93 41.91)
+			(xy 201.93 45.72) (xy 201.93 44.45)
 		)
 		(stroke
 			(width 0)
@@ -7355,7 +7355,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
 			(at 224.79 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7435,7 +7435,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
 			(at 242.57 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7636,5 +7636,41 @@
 			(type default)
 		)
 		(uuid "ece9543d-1712-42f8-a4d2-7ede63ac5dcc")
+	)
+	(wire
+		(pts
+			(xy 218.44 44.45) (xy 201.93 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ebb470-0214-488b-b2a7-6137cca09a7e")
+	)
+	(junction
+		(at 201.93 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a935579e-e28a-4aa1-a5b3-442ec0aaf326")
+	)
+	(wire
+		(pts
+			(xy 201.93 44.45) (xy 201.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac7495eb-37ab-470b-8b4b-30a1caa4209f")
+	)
+	(wire
+		(pts
+			(xy 218.44 41.91) (xy 218.44 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae276986-068f-4fc3-a8e5-6a9d7bfff98f")
 	)
 )

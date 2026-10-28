@@ -1,8 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T04:34:53.639Z",
+  "generatedAt": "2026-10-28T16:10:29.912Z",
   "projectId": "d6649800-0c81-4ba4-b9ee-2061019eeef5",
   "libs": [
+    {
+      "nickname": "Button_Switch_SMD",
+      "kinds": [
+        "footprint"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "c48ce626-ab7a-491c-82ef-c494b57c2144",
+      "type": "origin",
+      "revision": "sha256:9a0e40a246520a3c67579a27a0cf1485f7b8ba8394804437d7bb7dd057b11cb8",
+      "source": {
+        "provenance": "kicad-footprints",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-footprints",
+        "ref": "kicad-footprints@2c7f07017725b44b98f30849e1b83e29fed43718"
+      }
+    },
     {
       "nickname": "Connector",
       "kinds": [
@@ -33,6 +49,22 @@
         "provenance": "kicad-symbols",
         "repoUrl": "https://gitlab.com/kicad/libraries/kicad-symbols",
         "ref": "kicad-symbols@60d2dc9981920ee40eb5caa4dc01b23f713beca7"
+      }
+    },
+    {
+      "nickname": "Connector_PinHeader_2.54mm",
+      "kinds": [
+        "footprint"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "40b9c53d-5ca8-4bb2-bc3f-0035287a7bd0",
+      "type": "origin",
+      "revision": "sha256:9ab0332f24b12369c3e83bd09c4d2c94b05ec9b2aca08957dfee125b261647cb",
+      "source": {
+        "provenance": "kicad-footprints",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-footprints",
+        "ref": "kicad-footprints@2c7f07017725b44b98f30849e1b83e29fed43718"
       }
     },
     {
