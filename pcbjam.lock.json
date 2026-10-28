@@ -1,8 +1,104 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T01:55:39.877Z",
+  "generatedAt": "2026-10-28T04:34:53.639Z",
   "projectId": "d6649800-0c81-4ba4-b9ee-2061019eeef5",
   "libs": [
+    {
+      "nickname": "Connector",
+      "kinds": [
+        "symbol"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "302dbbf7-a2d3-41e9-9402-e0ff4f67d1c5",
+      "type": "origin",
+      "revision": "sha256:8160c2a80026e07af9bede64fbc023359e5344ef39271c4ee3c1479b403d2ea2",
+      "source": {
+        "provenance": "kicad-symbols",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-symbols",
+        "ref": "kicad-symbols@60d2dc9981920ee40eb5caa4dc01b23f713beca7"
+      }
+    },
+    {
+      "nickname": "Connector_Generic",
+      "kinds": [
+        "symbol"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "a9bf02ad-4896-4576-a1a2-1a0a13f7e274",
+      "type": "origin",
+      "revision": "sha256:7a96134515f651cc6ce72f91a7b97b2a59988af6646ecdee5217e14ccaa72379",
+      "source": {
+        "provenance": "kicad-symbols",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-symbols",
+        "ref": "kicad-symbols@60d2dc9981920ee40eb5caa4dc01b23f713beca7"
+      }
+    },
+    {
+      "nickname": "LED",
+      "kinds": [
+        "symbol"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "7fc65ed6-a82f-4016-a265-e9a6c585e0dc",
+      "type": "origin",
+      "revision": "sha256:914edaeefa6a45399c953e19fdddaed1ca17d0deec8c639a0b4d6f363a676cbe",
+      "source": {
+        "provenance": "kicad-symbols",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-symbols",
+        "ref": "kicad-symbols@60d2dc9981920ee40eb5caa4dc01b23f713beca7"
+      }
+    },
+    {
+      "nickname": "LED_SMD",
+      "kinds": [
+        "footprint"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "c8f53031-320d-4f4c-b88e-d4c08d1233d9",
+      "type": "origin",
+      "revision": "sha256:e677fe37a4894eb39dfc85b4143c2a24e285dcee9e79f14ff3f401f1974f9572",
+      "source": {
+        "provenance": "kicad-footprints",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-footprints",
+        "ref": "kicad-footprints@2c7f07017725b44b98f30849e1b83e29fed43718"
+      }
+    },
+    {
+      "nickname": "Logic_LevelTranslator",
+      "kinds": [
+        "symbol"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "8fd4cb60-bd66-492c-8b5b-e8e7fc323dac",
+      "type": "origin",
+      "revision": "sha256:04c18132857e66f8779a5e55e24e2547adb0979973202b7006286376502cbd13",
+      "source": {
+        "provenance": "kicad-symbols",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-symbols",
+        "ref": "kicad-symbols@60d2dc9981920ee40eb5caa4dc01b23f713beca7"
+      }
+    },
+    {
+      "nickname": "Package_SO",
+      "kinds": [
+        "footprint"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "c0d7dcc9-406f-491d-8e87-fed0f5fc1015",
+      "type": "origin",
+      "revision": "sha256:96aa4547f9b28b173056721553df7c212d196b49edc1bd3cada8030ebcb56e4f",
+      "source": {
+        "provenance": "kicad-footprints",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-footprints",
+        "ref": "kicad-footprints@2c7f07017725b44b98f30849e1b83e29fed43718"
+      }
+    },
     {
       "nickname": "Seeed_Studio_XIAO_Series",
       "kinds": [
@@ -17,6 +113,38 @@
         "provenance": "opl_kicad_library",
         "repoUrl": "https://github.com/Seeed-Studio/OPL_Kicad_Library",
         "ref": "opl_kicad_library@b0035c51eb0348bb3e165fdb2f2765fa3d1d17bd"
+      }
+    },
+    {
+      "nickname": "Switch",
+      "kinds": [
+        "symbol"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "ad07b1aa-16c0-45df-97d5-e7a17c326d52",
+      "type": "origin",
+      "revision": "sha256:60e395f577ca4d1b842fb42d130b4396a819ae3beef26822d370465e3bba2643",
+      "source": {
+        "provenance": "kicad-symbols",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-symbols",
+        "ref": "kicad-symbols@60d2dc9981920ee40eb5caa4dc01b23f713beca7"
+      }
+    },
+    {
+      "nickname": "TestPoint",
+      "kinds": [
+        "footprint"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "9156b161-042e-4c8c-8301-fdb3069cddf6",
+      "type": "origin",
+      "revision": "sha256:4dc0941a46a605e8a5bfb0836a771b80abfab8c0562ab63da5a4a71790c3e431",
+      "source": {
+        "provenance": "kicad-footprints",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-footprints",
+        "ref": "kicad-footprints@2c7f07017725b44b98f30849e1b83e29fed43718"
       }
     },
     {
