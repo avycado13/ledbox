@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-28T01:55:39.877Z",
+  "projectId": "d6649800-0c81-4ba4-b9ee-2061019eeef5",
+  "libs": [
+    {
+      "nickname": "Seeed_Studio_XIAO_Series",
+      "kinds": [
+        "symbol"
+      ],
+      "bundled": false,
+      "license": "CC-BY-SA-4.0",
+      "libId": "e19b9e1a-d7ae-45f8-ba80-8772eaccdd15",
+      "type": "origin",
+      "revision": "sha256:ef6cf869df2a9e442722d644b79f191b74b065bc007b529b9a827e7e8ba0ec5e",
+      "source": {
+        "provenance": "opl_kicad_library",
+        "repoUrl": "https://github.com/Seeed-Studio/OPL_Kicad_Library",
+        "ref": "opl_kicad_library@b0035c51eb0348bb3e165fdb2f2765fa3d1d17bd"
+      }
+    },
+    {
+      "nickname": "power",
+      "kinds": [
+        "symbol"
+      ],
+      "bundled": false,
+      "license": "cc-by-sa-4.0",
+      "libId": "bd8fbb81-23de-4458-b583-487fbb32db67",
+      "type": "origin",
+      "revision": "sha256:68ad8f43093b9bf7da232b233b5012758dfadb95bb5e1b4b806572c1823f06ee",
+      "source": {
+        "provenance": "kicad-symbols",
+        "repoUrl": "https://gitlab.com/kicad/libraries/kicad-symbols",
+        "ref": "kicad-symbols@60d2dc9981920ee40eb5caa4dc01b23f713beca7"
+      }
+    }
+  ]
+}
