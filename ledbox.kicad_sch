@@ -1556,6 +1556,248 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Sensor:RPR-0521RS"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -5.08 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RPR-0521RS"
+				(at 6.35 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Sensor:Rohm_RPR-0521RS"
+				(at 0 5.969 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/opto/optical_sensor/opto_module/rpr-0521rs-e.pdf"
+				(at 0.127 -6.223 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Digital Proximity and Ambient Light Sensor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "sensor light"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Rohm?RPR?0521*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RPR-0521RS_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "RPR-0521RS_1_1"
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "LED_A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "LED_K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "LDR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push_45deg"
 			(pin_numbers
 				(hide yes)
@@ -2253,12 +2495,4691 @@
 			(embedded_fonts no)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
+	(junction
+		(at 226.06 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "395d78a8-6be3-4cdc-a6a3-eaf010d65139")
+	)
+	(junction
+		(at 147.32 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "820e4c39-0158-4fce-be7a-01a5078c0ab5")
+	)
+	(junction
+		(at 109.22 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a49722e3-0b3e-4223-9a43-f5e6260ade1d")
+	)
+	(junction
+		(at 201.93 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a935579e-e28a-4aa1-a5b3-442ec0aaf326")
+	)
+	(junction
+		(at 234.95 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b46cf7e9-b6a9-4184-af8f-64f209a1f631")
+	)
+	(junction
+		(at 147.32 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d368b0cc-fd86-4ee3-9d11-e8072226d71f")
+	)
+	(junction
+		(at 236.22 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3a5e6e7-54eb-41f1-b473-e4c3c31513e6")
+	)
+	(junction
+		(at 215.9 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fada48c9-7c3f-4d63-af29-f8cedb56187b")
+	)
+	(no_connect
+		(at 176.53 63.5)
+		(uuid "4156b0a7-1196-45e0-b113-d6055a53787e")
+	)
+	(no_connect
+		(at 168.91 41.91)
+		(uuid "97c98349-5135-4cd4-8a39-3de6a1868044")
+	)
+	(no_connect
+		(at 187.96 63.5)
+		(uuid "cc11ecd4-4bfe-421c-b3ad-7e6622cc9846")
+	)
+	(no_connect
+		(at 191.77 63.5)
+		(uuid "dc3d128c-dbef-4278-a9cf-d653af9f27e4")
+	)
+	(no_connect
+		(at 180.34 63.5)
+		(uuid "df902dbe-9857-408a-8952-79b5a020cfa2")
+	)
+	(no_connect
+		(at 195.58 63.5)
+		(uuid "e0438dc0-3b29-4013-a74f-0418ef178260")
+	)
+	(no_connect
+		(at 180.34 104.14)
+		(uuid "f3975cb8-b34d-4278-8a67-25304066c8a3")
+	)
+	(wire
+		(pts
+			(xy 218.44 34.29) (xy 214.63 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "003a0e69-cd48-4447-845f-ee204b29d475")
+	)
+	(wire
+		(pts
+			(xy 226.06 67.31) (xy 226.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0164b65b-f55e-4c5d-adbf-3f0cbcf6350c")
+	)
+	(wire
+		(pts
+			(xy 218.44 44.45) (xy 201.93 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ebb470-0214-488b-b2a7-6137cca09a7e")
+	)
+	(wire
+		(pts
+			(xy 234.95 78.74) (xy 234.95 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b5c465-db78-4662-b858-c14d3be303fc")
+	)
+	(wire
+		(pts
+			(xy 154.94 78.74) (xy 161.29 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05be5ba0-fca2-4ea7-84d1-3fd556834588")
+	)
+	(wire
+		(pts
+			(xy 69.85 160.02) (xy 69.85 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06d2f194-3972-4256-b306-3f462c7dfe89")
+	)
+	(wire
+		(pts
+			(xy 90.17 120.65) (xy 96.52 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b1688a-4841-44e1-b3b6-7dd26640b84d")
+	)
+	(wire
+		(pts
+			(xy 207.01 74.93) (xy 215.9 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a1ae7bb-0e78-402d-b3e4-5e4d80f8ee23")
+	)
+	(wire
+		(pts
+			(xy 69.85 172.72) (xy 66.04 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c32ad2f-785b-4bd5-85c3-9e1491b4dc12")
+	)
+	(wire
+		(pts
+			(xy 66.04 133.35) (xy 71.12 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c9c6fb5-9062-43a2-927d-cc01baa14467")
+	)
+	(wire
+		(pts
+			(xy 219.71 86.36) (xy 207.01 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17ded311-8302-4375-af32-c92bf6050ac8")
+	)
+	(wire
+		(pts
+			(xy 104.14 90.17) (xy 104.14 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19686d88-4f7e-4507-a5e4-f0512b4cdc83")
+	)
+	(wire
+		(pts
+			(xy 147.32 27.94) (xy 130.81 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c30b892-c5c2-48de-8283-608451a89823")
+	)
+	(wire
+		(pts
+			(xy 38.1 172.72) (xy 34.29 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20d7c965-d15b-4fd4-bcce-ad1fffbdf76e")
+	)
+	(wire
+		(pts
+			(xy 90.17 113.03) (xy 96.52 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23729e4b-2e71-42fe-b728-3db3a743f619")
+	)
+	(wire
+		(pts
+			(xy 234.95 67.31) (xy 234.95 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23bcc0c9-45ac-4eb0-9dc9-ee91fdd784dd")
+	)
+	(wire
+		(pts
+			(xy 69.85 71.12) (xy 66.04 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2815ee35-d650-41cc-b848-338ac5f16108")
+	)
+	(wire
+		(pts
+			(xy 240.03 90.17) (xy 240.03 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c81155d-291f-433d-b32f-0434bdc3d7ab")
+	)
+	(wire
+		(pts
+			(xy 116.84 113.03) (xy 121.92 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31431963-fb85-40f8-94a9-9d2b7841e6f1")
+	)
+	(wire
+		(pts
+			(xy 69.85 58.42) (xy 69.85 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3223b4c0-5fe4-4174-a252-df6e5502cb95")
+	)
+	(wire
+		(pts
+			(xy 109.22 41.91) (xy 123.19 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "332512de-d3b7-44a5-a570-f9c86d151a0e")
+	)
+	(wire
+		(pts
+			(xy 207.01 90.17) (xy 240.03 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3331764d-6555-445b-82de-80dc42b14080")
+	)
+	(wire
+		(pts
+			(xy 69.85 123.19) (xy 69.85 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3518e094-0863-429e-b3d0-c6051a44be94")
+	)
+	(wire
+		(pts
+			(xy 248.92 67.31) (xy 248.92 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d72caeb-b71c-44a3-ad89-dc8540dbb603")
+	)
+	(wire
+		(pts
+			(xy 38.1 160.02) (xy 38.1 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "422689db-fe8c-48a4-8344-2eca0ad4c1ce")
+	)
+	(wire
+		(pts
+			(xy 69.85 135.89) (xy 66.04 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "423f4445-95ba-4462-9b63-4ecc99e45a53")
+	)
+	(wire
+		(pts
+			(xy 198.12 27.94) (xy 198.12 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46129af1-2f13-4273-ab9a-75c9a5c6838f")
+	)
+	(wire
+		(pts
+			(xy 34.29 68.58) (xy 39.37 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46be1c47-e14e-4ec1-9bd2-84dc03d8bee0")
+	)
+	(wire
+		(pts
+			(xy 38.1 104.14) (xy 34.29 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4717178b-a6fd-40d3-9e2a-f3bbcafce392")
+	)
+	(wire
+		(pts
+			(xy 234.95 71.12) (xy 226.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48c9a7f7-7133-4157-a814-f7c03465ac48")
+	)
+	(wire
+		(pts
+			(xy 208.28 66.04) (xy 208.28 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea99051-f9a6-455b-93ab-62d462cc6de8")
+	)
+	(wire
+		(pts
+			(xy 38.1 58.42) (xy 38.1 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "526250ef-7db7-4912-a016-b1d030f1ae57")
+	)
+	(wire
+		(pts
+			(xy 207.01 78.74) (xy 234.95 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5393018b-e5c4-419e-a5b5-0988f521648a")
+	)
+	(wire
+		(pts
+			(xy 38.1 91.44) (xy 38.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57ade0a8-315b-435c-a0a4-8f06becf0663")
+	)
+	(wire
+		(pts
+			(xy 116.84 102.87) (xy 118.11 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f49e75-8b3c-46a4-8b81-2147c8b45f8f")
+	)
+	(wire
+		(pts
+			(xy 38.1 71.12) (xy 34.29 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "592e4205-c2dc-4be7-8862-bb24d1e09e2d")
+	)
+	(wire
+		(pts
+			(xy 71.12 35.56) (xy 77.47 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e159be1-7699-4842-a69f-3eff5e0b2b1c")
+	)
+	(wire
+		(pts
+			(xy 116.84 118.11) (xy 121.92 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e47b92f-4393-4e84-9b40-b55099ba970f")
+	)
+	(wire
+		(pts
+			(xy 34.29 101.6) (xy 39.37 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6220a165-735e-422e-88f9-58e2f356de5c")
+	)
+	(wire
+		(pts
+			(xy 90.17 110.49) (xy 96.52 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ac44b4-40b0-4548-8a45-d3622d48f84d")
+	)
+	(wire
+		(pts
+			(xy 69.85 99.06) (xy 66.04 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "633e337a-ccce-4def-8d50-54cdb61fc9f1")
+	)
+	(wire
+		(pts
+			(xy 130.81 49.53) (xy 147.32 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65b81f83-8aec-4c48-a2ed-976958c70312")
+	)
+	(wire
+		(pts
+			(xy 69.85 76.2) (xy 69.85 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "664ee70c-434a-4c10-8119-29e3efbc237e")
+	)
+	(wire
+		(pts
+			(xy 116.84 115.57) (xy 121.92 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "693cc9b4-42d8-41f8-ad63-9548de3e20c7")
+	)
+	(wire
+		(pts
+			(xy 147.32 49.53) (xy 147.32 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d145fff-25d3-4e3a-ab41-935e091e2174")
+	)
+	(wire
+		(pts
+			(xy 69.85 104.14) (xy 66.04 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f487d1f-14c4-4782-96bc-73dfdca4722b")
+	)
+	(wire
+		(pts
+			(xy 116.84 107.95) (xy 121.92 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f4a146e-116a-4fdb-a01e-ac0adbc1392a")
+	)
+	(wire
+		(pts
+			(xy 116.84 105.41) (xy 121.92 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7045094d-7f4f-43bf-a77f-7986e3f97695")
+	)
+	(wire
+		(pts
+			(xy 38.1 109.22) (xy 38.1 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70b39038-5b7f-4a0f-8dfd-74861548c1e9")
+	)
+	(wire
+		(pts
+			(xy 38.1 167.64) (xy 34.29 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73695f6b-684b-4800-b2f2-75ec991f927a")
+	)
+	(wire
+		(pts
+			(xy 34.29 133.35) (xy 39.37 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "741b774f-f6fe-4b60-95ac-56b8ae6c67f6")
+	)
+	(wire
+		(pts
+			(xy 90.17 107.95) (xy 96.52 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764c29a1-b595-425a-9158-04c40b7e3f9b")
+	)
+	(wire
+		(pts
+			(xy 38.1 140.97) (xy 38.1 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a4615c0-de81-4a2c-862e-a538d7e6d710")
+	)
+	(wire
+		(pts
+			(xy 106.68 130.81) (xy 106.68 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c031b85-0456-473d-9bdd-9d87ed797f07")
+	)
+	(wire
+		(pts
+			(xy 106.68 27.94) (xy 106.68 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de7427f-4264-49c4-8b22-d20fbd35f5df")
+	)
+	(wire
+		(pts
+			(xy 161.29 34.29) (xy 161.29 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e0edf85-3768-4a64-8b6d-940006decedf")
+	)
+	(wire
+		(pts
+			(xy 138.43 41.91) (xy 153.67 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f3e169c-8e97-4bdb-8a77-6fa106b07da3")
+	)
+	(wire
+		(pts
+			(xy 96.52 123.19) (xy 90.17 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f774f43-682e-4c6e-a6fb-69d488e0cea7")
+	)
+	(wire
+		(pts
+			(xy 101.6 35.56) (xy 101.6 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "803a70a9-f165-466c-9ac7-5d541c4b4172")
+	)
+	(wire
+		(pts
+			(xy 66.04 101.6) (xy 71.12 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83a2de34-10b6-4b09-ab02-12549e757a30")
+	)
+	(wire
+		(pts
+			(xy 71.12 33.02) (xy 77.47 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85a436d2-7db5-4b71-9deb-2b026a4c8a9b")
+	)
+	(wire
+		(pts
+			(xy 207.01 97.79) (xy 222.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e14ea77-56b0-4ac6-a396-aa69e85741a8")
+	)
+	(wire
+		(pts
+			(xy 34.29 170.18) (xy 39.37 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fa4035e-db18-4cb9-993c-627a87d2d715")
+	)
+	(wire
+		(pts
+			(xy 208.28 69.85) (xy 215.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9245e060-0ecf-417a-a730-415bbc7e3c90")
+	)
+	(wire
+		(pts
+			(xy 69.85 109.22) (xy 69.85 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "939568fd-dc47-4392-b3b4-555c156ebecb")
+	)
+	(wire
+		(pts
+			(xy 38.1 130.81) (xy 34.29 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9512837d-f893-4b18-8c01-634a9b88c9e3")
+	)
+	(wire
+		(pts
+			(xy 69.85 167.64) (xy 66.04 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "954b1a18-a224-4649-af27-6fe88d2200f3")
+	)
+	(wire
+		(pts
+			(xy 214.63 27.94) (xy 214.63 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9584fc7d-39f4-40fb-9fd1-0a74d786454d")
+	)
+	(wire
+		(pts
+			(xy 90.17 118.11) (xy 96.52 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96f4ea21-a2cf-4939-aa31-546a626e843b")
+	)
+	(wire
+		(pts
+			(xy 248.92 78.74) (xy 234.95 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e5c8e9-61e9-47ab-a273-22ab694c527a")
+	)
+	(wire
+		(pts
+			(xy 69.85 177.8) (xy 69.85 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99cd26d5-45df-4fea-87b3-b193fb0abc58")
+	)
+	(wire
+		(pts
+			(xy 38.1 177.8) (xy 38.1 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d4c703d-5307-4a40-b922-4d58237a9bc5")
+	)
+	(wire
+		(pts
+			(xy 90.17 105.41) (xy 96.52 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a152c9b7-2469-42c6-8c11-736aadf8e80f")
+	)
+	(wire
+		(pts
+			(xy 97.79 35.56) (xy 101.6 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a262ed16-e17f-4177-b0cd-4b1cd94e14c5")
+	)
+	(wire
+		(pts
+			(xy 118.11 102.87) (xy 118.11 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a37fb74e-3e5d-4b02-91dc-b6882e84bed7")
+	)
+	(wire
+		(pts
+			(xy 154.94 86.36) (xy 161.29 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4548881-0802-4d70-85a4-7c41bb57de3a")
+	)
+	(wire
+		(pts
+			(xy 185.42 104.14) (xy 185.42 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6397916-7170-4525-b2d6-a40c82bc3120")
+	)
+	(wire
+		(pts
+			(xy 184.15 57.15) (xy 184.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8076f3e-8487-4200-ab04-51234d3614c1")
+	)
+	(wire
+		(pts
+			(xy 154.94 93.98) (xy 161.29 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a90bfb8c-72d5-4f97-b0b6-95f8cebd9cb1")
+	)
+	(wire
+		(pts
+			(xy 227.33 107.95) (xy 227.33 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa1fb114-9a62-4cd0-8562-769767ade890")
+	)
+	(wire
+		(pts
+			(xy 69.85 130.81) (xy 66.04 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aafb8e05-8313-4032-833d-b9b4ae097995")
+	)
+	(wire
+		(pts
+			(xy 116.84 120.65) (xy 121.92 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abba8315-891f-45bb-925e-bc83590c4101")
+	)
+	(wire
+		(pts
+			(xy 201.93 44.45) (xy 201.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac7495eb-37ab-470b-8b4b-30a1caa4209f")
+	)
+	(wire
+		(pts
+			(xy 218.44 41.91) (xy 218.44 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae276986-068f-4fc3-a8e5-6a9d7bfff98f")
+	)
+	(wire
+		(pts
+			(xy 101.6 38.1) (xy 97.79 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aea7375c-b0ad-4b06-8bdb-269f0620e5c1")
+	)
+	(wire
+		(pts
+			(xy 116.84 110.49) (xy 121.92 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af0156d3-923c-4540-b182-f8179cc5fbc2")
+	)
+	(wire
+		(pts
+			(xy 38.1 99.06) (xy 34.29 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aff93771-ccee-44d0-99a2-43d3d9c14a5e")
+	)
+	(wire
+		(pts
+			(xy 69.85 66.04) (xy 66.04 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b089a1f6-036d-4b4f-87b3-de7e7c47e8b6")
+	)
+	(wire
+		(pts
+			(xy 236.22 107.95) (xy 227.33 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2827491-557d-4761-9414-0afb8b47ba23")
+	)
+	(wire
+		(pts
+			(xy 116.84 123.19) (xy 121.92 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2e24c60-57cf-4658-bb63-9905e11fc2ea")
+	)
+	(wire
+		(pts
+			(xy 172.72 57.15) (xy 172.72 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b444b1f3-c1f4-4e04-87c4-d16faccfa31d")
+	)
+	(wire
+		(pts
+			(xy 207.01 82.55) (xy 226.06 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4764481-9c21-4e46-a571-41a994764635")
+	)
+	(wire
+		(pts
+			(xy 69.85 140.97) (xy 69.85 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b69eb1f4-1bed-4730-8fb3-1cc6c295dd33")
+	)
+	(wire
+		(pts
+			(xy 215.9 69.85) (xy 215.9 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6f72442-8c0b-45aa-adab-e2402bac8e55")
+	)
+	(wire
+		(pts
+			(xy 161.29 49.53) (xy 147.32 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b76c5f36-88c9-4d41-868c-a249a474509b")
+	)
+	(wire
+		(pts
+			(xy 154.94 90.17) (xy 161.29 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9fdea4e-33d0-4472-af92-0007874d0759")
+	)
+	(wire
+		(pts
+			(xy 109.22 92.71) (xy 109.22 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba72299f-29d5-42be-9e20-5099d2d2340a")
+	)
+	(wire
+		(pts
+			(xy 201.93 45.72) (xy 201.93 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc945260-ff74-4432-a227-f247e817ecfd")
+	)
+	(wire
+		(pts
+			(xy 38.1 135.89) (xy 34.29 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "becfe595-1c04-4c38-8c16-9dc8a4b4b5b0")
+	)
+	(wire
+		(pts
+			(xy 207.01 93.98) (xy 213.36 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d9f2a4-2430-4e8e-9461-827592ee7168")
+	)
+	(wire
+		(pts
+			(xy 154.94 82.55) (xy 161.29 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4450e26-fc67-4a80-9689-efae9da882fc")
+	)
+	(wire
+		(pts
+			(xy 87.63 19.05) (xy 87.63 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccd01a1e-ced2-4dea-996d-d0f78f430e7e")
+	)
+	(wire
+		(pts
+			(xy 38.1 76.2) (xy 38.1 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cead8160-6faf-4b4f-898f-e372655266a6")
+	)
+	(wire
+		(pts
+			(xy 87.63 45.72) (xy 87.63 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d22a2ecb-2305-4c87-9710-ee15461bdb01")
+	)
+	(wire
+		(pts
+			(xy 215.9 67.31) (xy 215.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2b02858-0ef1-4c24-b360-1791f9dc5195")
+	)
+	(wire
+		(pts
+			(xy 106.68 33.02) (xy 97.79 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f17984-141e-4c04-81d4-eef2c74fa35c")
+	)
+	(wire
+		(pts
+			(xy 69.85 91.44) (xy 69.85 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4154e11-50c0-4996-8ca0-18665f88d1e1")
+	)
+	(wire
+		(pts
+			(xy 130.81 27.94) (xy 130.81 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6eb73e5-72c3-49bd-ba5b-20d306302207")
+	)
+	(wire
+		(pts
+			(xy 118.11 92.71) (xy 109.22 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8072ee8-4ab0-4018-8195-b09c0f6bdea0")
+	)
+	(wire
+		(pts
+			(xy 161.29 27.94) (xy 147.32 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d974c831-0401-4343-a4c8-7c10181fc1b2")
+	)
+	(wire
+		(pts
+			(xy 168.91 57.15) (xy 168.91 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dadc05b7-e72f-467f-a9a0-849414fa8240")
+	)
+	(wire
+		(pts
+			(xy 71.12 38.1) (xy 77.47 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e062cade-0284-4f9d-9d91-654a06df3903")
+	)
+	(wire
+		(pts
+			(xy 226.06 71.12) (xy 226.06 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e69ede79-441f-4107-9b49-e60d73f1139c")
+	)
+	(wire
+		(pts
+			(xy 66.04 170.18) (xy 71.12 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e71d9cf4-215d-45e4-91e9-9a5e052ab307")
+	)
+	(wire
+		(pts
+			(xy 154.94 97.79) (xy 161.29 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8961380-d091-4d86-b180-b42c4f84536a")
+	)
+	(wire
+		(pts
+			(xy 245.11 102.87) (xy 245.11 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8fb92bc-30f2-483f-a321-a3fef4780d17")
+	)
+	(wire
+		(pts
+			(xy 245.11 107.95) (xy 236.22 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece9543d-1712-42f8-a4d2-7ede63ac5dcc")
+	)
+	(wire
+		(pts
+			(xy 66.04 68.58) (xy 71.12 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed1ba979-0ffd-4bf5-a9f7-7fdd58b91d63")
+	)
+	(wire
+		(pts
+			(xy 90.17 115.57) (xy 96.52 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3726f12-2b25-4692-85ec-486511f088db")
+	)
+	(wire
+		(pts
+			(xy 38.1 123.19) (xy 38.1 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4863a5e-f0f6-4b73-a140-45475ff0631a")
+	)
+	(wire
+		(pts
+			(xy 38.1 66.04) (xy 34.29 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f62b1474-1554-4a97-85a8-eb5b0bc0386c")
+	)
+	(wire
+		(pts
+			(xy 201.93 34.29) (xy 198.12 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa83f40d-c8fa-40a4-b291-e608c74764d4")
+	)
+	(wire
+		(pts
+			(xy 154.94 74.93) (xy 161.29 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff331872-b5a9-417a-87b9-f6d19a9148bf")
+	)
+	(wire
+		(pts
+			(xy 109.22 90.17) (xy 109.22 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff67b41c-76bb-48f1-96ec-66d6e49be487")
+	)
+	(label "INT"
+		(at 71.12 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04481f0a-2c42-41d6-9bf2-73609e84770d")
+	)
+	(label "LED8"
+		(at 90.17 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ce3e02a-7f7e-4ec2-b4e3-cda8232f6faa")
+	)
+	(label "LED2"
+		(at 90.17 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "116475df-5f1b-4800-a8dc-0e60bf7fc3b9")
+	)
+	(label "A5"
+		(at 154.94 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1563ecae-0e16-4484-9850-25d03c12244c")
+	)
+	(label "LED6"
+		(at 90.17 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17c0bce6-0b54-4bd3-b367-c4a3da4100e3")
+	)
+	(label "SDA"
+		(at 154.94 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "21fa2ff2-979f-44f8-a418-73025a04a3a7")
+	)
+	(label "A3"
+		(at 154.94 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "281c89ce-4dd0-4d0f-9b02-ff8126486a7e")
+	)
+	(label "STATUS_LED"
+		(at 109.22 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3436a93f-881f-44cd-bca0-b6dfb1a991f8")
+	)
+	(label "A2"
+		(at 154.94 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a9057b4-7ceb-42cb-a96a-20e8d9aa6dba")
+	)
+	(label "INT"
+		(at 184.15 57.15 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3ac2e760-784a-4d60-a5d6-bb1bfc8b1410")
+	)
+	(label "A6"
+		(at 172.72 57.15 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "46f9c61a-b97b-42a7-b0a6-80323acc76c0")
+	)
+	(label "A8"
+		(at 121.92 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4ae642f7-8813-44af-81ac-47901e97f1d3")
+	)
+	(label "LED3"
+		(at 39.37 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4d832070-0475-4a52-975b-f7870bc08ac0")
+	)
+	(label "LED7"
+		(at 39.37 170.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "54b99631-9fbb-4e87-842f-a1336189a9c6")
+	)
+	(label "LED5"
+		(at 71.12 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56d2340c-64e2-4cea-ab40-2a9b3d4346a3")
+	)
+	(label "SCL"
+		(at 71.12 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a6d7e5e-191c-483f-9543-ad8449877afc")
+	)
+	(label "A4"
+		(at 154.94 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ac6c808-0ea2-4939-a782-5cd7a051ccd3")
+	)
+	(label "LED1"
+		(at 39.37 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ed73097-d714-4cd5-8299-ae17d62fe091")
+	)
+	(label "A5"
+		(at 121.92 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "661aeeff-bac9-4321-9ef5-eb0bd0b63c9e")
+	)
+	(label "LED4"
+		(at 71.12 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67b452ec-9761-4155-933c-2a86e995662a")
+	)
+	(label "A4"
+		(at 121.92 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6b8ee826-cf54-419c-8328-98b1e61df4cd")
+	)
+	(label "STATUS_LED"
+		(at 219.71 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7bbc2efe-7756-4661-9e3f-bf78fc5d7b67")
+	)
+	(label "LED8"
+		(at 71.12 170.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7f4d70f2-fd0e-426d-bb86-36141e80be25")
+	)
+	(label "A8"
+		(at 213.36 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8906e108-61d4-40b4-be39-8f303d2b2ce9")
+	)
+	(label "A3"
+		(at 121.92 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c7bb6a6-d7aa-4d34-9f0d-f1a5c3e790dc")
+	)
+	(label "LED6"
+		(at 71.12 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8fcd8b6f-03ea-4106-85f2-655a871639ca")
+	)
+	(label "LED1"
+		(at 90.17 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a45a4557-ee96-4318-8611-8daaf1be7228")
+	)
+	(label "LED3"
+		(at 90.17 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a937b803-4dd9-4739-af0a-dbf4a31274d0")
+	)
+	(label "A6"
+		(at 121.92 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ab42f298-3f70-4e74-a4a8-3d1fe05a51de")
+	)
+	(label "A1"
+		(at 121.92 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b5a97207-63f1-43d6-839f-3f5f1133bc8f")
+	)
+	(label "A2"
+		(at 121.92 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b8f67beb-27f9-4d18-bc52-d3d1b2bd3d06")
+	)
+	(label "SDA"
+		(at 71.12 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bfcedffa-545a-4651-9b1e-7261df6a2ad2")
+	)
+	(label "LED4"
+		(at 90.17 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c40298aa-2e75-4b20-ae14-16a11e77ade7")
+	)
+	(label "LED2"
+		(at 39.37 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6e01001-d3ad-4da0-8b90-7265a96cfacf")
+	)
+	(label "LED5"
+		(at 90.17 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8ad1058-f769-4d8c-a615-87b777c79155")
+	)
+	(label "LED7"
+		(at 90.17 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cdf6c6f8-f63b-4d72-8e96-664772848400")
+	)
+	(label "SCL"
+		(at 154.94 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d28870f1-a0ec-4010-aba4-33cb097d9d77")
+	)
+	(label "A7"
+		(at 121.92 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4b7cc99-b1ca-4367-91b3-5170e4828f6f")
+	)
+	(label "A7"
+		(at 168.91 57.15 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dca8d95a-227c-426e-ab53-95a2cc5f71bc")
+	)
+	(label "A1"
+		(at 154.94 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0a66fa9-4645-4fbf-bcbb-7eef1c82c218")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 147.32 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "087ad1fd-9f7d-4db0-9564-c854a0d3a110")
+		(property "Reference" "#PWR017"
+			(at 147.32 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 147.32 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 147.32 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f8ebe94-d6e2-405a-9f24-a30d71e89d06")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
 		)
 	)
-	(embedded_fonts no)
+	(symbol
+		(lib_id "power:+5V")
+		(at 69.85 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13d16523-0d16-4408-a81f-da287435df66")
+		(property "Reference" "#PWR015"
+			(at 69.85 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 69.85 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 69.85 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "26984823-4d37-4b4c-9118-9702980fac7f")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1615e1cc-42c8-4997-852c-ba1231449ba4")
+		(property "Reference" "#PWR012"
+			(at 69.85 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4f12af1-e918-45bd-913f-a3a43ef7404b")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 224.79 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c6437be-1474-4740-8b64-a8d55705b4aa")
+		(property "Reference" "SW1"
+			(at 224.79 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 224.79 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
+			(at 224.79 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 224.79 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 224.79 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31c29760-b9aa-42ea-9e68-6d467835af8b")
+		)
+		(pin "2"
+			(uuid "51414bf6-de75-49ab-b17e-755e9b976c9a")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 38.1 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23093db0-5b11-45dc-bb53-0184b897b92d")
+		(property "Reference" "#PWR09"
+			(at 38.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 38.1 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 38.1 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca9ebb81-c511-4dd9-831c-0b48e09be5c4")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 218.44 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bd983c7-fade-4c63-b11b-580cf7da6680")
+		(property "Reference" "TP2"
+			(at 220.98 29.7179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 220.98 32.2579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 218.44 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08c8a495-319d-4b61-8406-475506412cd6")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:SK6812MINI-E")
+		(at 130.81 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f25ab71-0803-45a7-9bd6-6cb022a36882")
+		(property "Reference" "D1"
+			(at 144.78 35.4898 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 144.78 38.0298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
+			(at 132.08 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5149201.pdf"
+			(at 133.35 51.435 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 130.81 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ba2ff09c-f511-4c90-9aa4-4f6ca7348a44")
+		)
+		(pin "1"
+			(uuid "8a78e3a2-66ec-43d5-a16e-d693bca2185c")
+		)
+		(pin "3"
+			(uuid "406653fc-0cac-493b-ba80-a520e86840b0")
+		)
+		(pin "4"
+			(uuid "ebe75fc8-4b5e-4c1f-8366-c740e40ada12")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor:RPR-0521RS")
+		(at 87.63 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3466c96a-b850-400b-b9e4-532acd61052e")
+		(property "Reference" "U3"
+			(at 89.7733 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RPR-0521RS"
+			(at 89.7733 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Sensor:Rohm_RPR-0521RS"
+			(at 87.63 29.591 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/opto/optical_sensor/opto_module/rpr-0521rs-e.pdf"
+			(at 87.757 41.783 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Digital Proximity and Ambient Light Sensor"
+			(at 87.63 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 87.63 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "42ef5d4a-ddac-4e5c-9d04-83f5a9cd1dbc")
+		)
+		(pin "8"
+			(uuid "ce620335-c702-4582-af79-8cc796de9179")
+		)
+		(pin "7"
+			(uuid "4d9b5958-d664-4bc1-b14f-554fb3b0c283")
+		)
+		(pin "6"
+			(uuid "488fa609-3909-489e-8140-f18ddc21c06e")
+		)
+		(pin "4"
+			(uuid "4c142375-49d2-4f47-97e0-ed292a4e46e6")
+		)
+		(pin "5"
+			(uuid "c291d3fc-e5a7-427b-8a2a-f6fa8a298909")
+		)
+		(pin "1"
+			(uuid "fa63451b-4663-4675-bcdc-e31f4e0f8b67")
+		)
+		(pin "2"
+			(uuid "f61f7b46-39af-44a7-abd8-f8f78ca3eb49")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 218.44 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4233b861-ad5d-4f70-b674-759e01d1060c")
+		(property "Reference" "TP4"
+			(at 220.98 37.3379 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND2"
+			(at 220.98 39.8779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+			(at 223.52 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 218.44 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "773831f6-b6c2-4a9d-8653-76e8779c5a5c")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 38.1 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42bf577f-df6f-4f73-9cef-b10a4185fb1d")
+		(property "Reference" "#PWR06"
+			(at 38.1 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 38.1 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 38.1 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2baccc1-2d00-46d8-8317-b3f2ccb26f60")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 104.14 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "443eea38-41ec-436a-ba55-6cba51b9ca76")
+		(property "Reference" "#PWR025"
+			(at 104.14 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 104.14 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 104.14 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "458da91a-3c1c-4744-ae14-ebff042b0b14")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cb3f93f-9432-4ced-9572-100e53bd1f7f")
+		(property "Reference" "#PWR01"
+			(at 185.42 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb7a4b52-41fc-4696-8c18-e875936055a0")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e8c0024-50cc-4798-95cb-04ca3cec104b")
+		(property "Reference" "#PWR08"
+			(at 38.1 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ade7c86f-b060-4416-8ffb-ca823f0c7fcd")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 226.06 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ff9a15e-7a37-4486-a0a0-d0401cd555f9")
+		(property "Reference" "#PWR03"
+			(at 226.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 226.06 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 226.06 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fba71d9c-5c73-4dbd-bf92-26792ac4b8b5")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 109.22 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "551ba663-b133-4a03-9593-5aefddff230e")
+		(property "Reference" "#PWR024"
+			(at 109.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 109.22 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 109.22 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4e4d1a6-e251-499c-b81d-9406d95f107e")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 29.21 101.6 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e317673-48be-4219-8953-121e941f7eaa")
+		(property "Reference" "J2"
+			(at 29.21 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED2"
+			(at 29.21 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 29.21 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 29.21 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "8638a659-de16-40d3-812f-5259289c9d1d")
+		)
+		(pin "1"
+			(uuid "58af06e0-f3b2-4a8b-9094-8583f844887c")
+		)
+		(pin "2"
+			(uuid "66271298-32c6-49c7-b1e3-3f16c5e0da95")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61cf36aa-4927-4406-ab95-a32b816ca325")
+		(property "Reference" "#PWR05"
+			(at 38.1 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c4cefa0-7cae-45a9-9895-ba2f121d8b22")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65b77ace-6359-46c3-ab23-8bc701b8ee2d")
+		(property "Reference" "#PWR029"
+			(at 236.22 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7e840f4-4f66-476a-9b6a-d2371aaf6ca0")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 201.93 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66de2791-fd79-4221-93e6-68f325c14dd1")
+		(property "Reference" "TP1"
+			(at 204.47 29.7179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V"
+			(at 204.47 32.2579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+			(at 207.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 201.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5d418df-d952-41ce-9c60-9cb61262116b")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Logic_LevelTranslator:TXS0108EPW")
+		(at 106.68 113.03 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "67db6fe9-5bd7-4888-bce1-8e48e9ef66de")
+		(property "Reference" "U2"
+			(at 104.5367 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TXS0108EPW"
+			(at 104.5367 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 106.68 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "www.ti.com/lit/ds/symlink/txs0108e.pdf"
+			(at 106.68 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bidirectional  level-shifting voltage translator, TSSOP-20"
+			(at 106.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "10"
+			(uuid "c9ae0005-605f-40c3-bce0-9c1d26dd572a")
+		)
+		(pin "11"
+			(uuid "5d2a1df3-3f52-4bdf-a982-81b5f780a170")
+		)
+		(pin "5"
+			(uuid "c1848c69-12d4-4f9c-8808-9a6b05e778de")
+		)
+		(pin "6"
+			(uuid "88563489-b30a-4c13-bd1b-493f68fb735a")
+		)
+		(pin "7"
+			(uuid "00b85cd1-517b-48ef-ac04-5b1a2290030f")
+		)
+		(pin "4"
+			(uuid "106b209a-91a3-486e-a8f3-ef6dc3887788")
+		)
+		(pin "3"
+			(uuid "b47cc3ef-0c4a-49d8-9c0c-ae1a6ad898fc")
+		)
+		(pin "1"
+			(uuid "ef48ec66-9ae4-4f13-bcb4-d2f8d6fc7ef8")
+		)
+		(pin "2"
+			(uuid "406d5d32-eefb-4cf5-984c-93156ead178b")
+		)
+		(pin "9"
+			(uuid "67145c81-1f2e-4a06-a2fe-7b3aec4f1ce3")
+		)
+		(pin "8"
+			(uuid "02ec0152-8b01-49b2-9e0b-ba23e1be9536")
+		)
+		(pin "20"
+			(uuid "7a84f97d-4dc2-439f-ac59-a20510f6d710")
+		)
+		(pin "19"
+			(uuid "bdf9908c-ceb4-4903-bfe5-d645820d640f")
+		)
+		(pin "18"
+			(uuid "0196e7c7-4faf-4500-a6ac-908f6b483f07")
+		)
+		(pin "17"
+			(uuid "81817145-7e14-41ae-9390-e2eb058e8e4d")
+		)
+		(pin "16"
+			(uuid "bed4d5e6-c150-4641-9d20-3dc415b5673f")
+		)
+		(pin "15"
+			(uuid "f3419b34-eec3-4488-a55d-12c253515e66")
+		)
+		(pin "14"
+			(uuid "5d932da6-c76b-4cb5-9b32-27bc473940be")
+		)
+		(pin "13"
+			(uuid "439ba3b6-7727-431d-9c23-e64de75c377a")
+		)
+		(pin "12"
+			(uuid "5528394a-fe34-4953-85cb-ae007d8293f1")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "733335fb-6a5f-4a3f-ace9-d6109d607a9c")
+		(property "Reference" "#PWR030"
+			(at 87.63 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c7623f7-3edc-4814-b5db-1583b3b82c2a")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76465307-7106-4751-b3bd-cc55182a4cdb")
+		(property "Reference" "#PWR023"
+			(at 106.68 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64ae10f5-7d96-4a11-b9c4-5a16032492fb")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 60.96 101.6 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7834b7bd-e959-4ce6-a74d-c804c7cfc25d")
+		(property "Reference" "J5"
+			(at 60.96 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED5"
+			(at 60.96 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 60.96 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 60.96 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "33edfe95-0437-4089-a487-84e09afac994")
+		)
+		(pin "1"
+			(uuid "82696ee8-ce2a-4d9d-b934-62ace6812cc2")
+		)
+		(pin "2"
+			(uuid "26924bcc-276b-443d-ba29-05557e2f3381")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c89c770-8548-4975-9217-20b86fc11ee4")
+		(property "Reference" "#PWR010"
+			(at 38.1 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51055e3f-82b1-4253-ae23-1e0c6f2ea476")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8224f390-8916-47ed-aebb-07d22586efbf")
+		(property "Reference" "#PWR020"
+			(at 38.1 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc049b43-4c15-436f-8f7c-139537e489fe")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89a68dc8-4d8d-4f62-abe3-7a301ec9342f")
+		(property "Reference" "#PWR022"
+			(at 69.85 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bba76bb2-144b-498b-807d-134d19801729")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 60.96 68.58 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8df2fb81-3f21-4add-a981-b94b8c0b247d")
+		(property "Reference" "J4"
+			(at 60.96 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED4"
+			(at 60.96 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 60.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 60.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4b150416-f498-4a65-8a8c-df03be1cb519")
+		)
+		(pin "1"
+			(uuid "793ba7a9-5ff6-4edd-8b3f-5667cc312438")
+		)
+		(pin "2"
+			(uuid "b4872e1b-c609-4d8f-ba07-2dfd0de0cafb")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:SK6812MINI-E")
+		(at 161.29 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f1e4016-8d89-4e85-8e25-9e7b824dd353")
+		(property "Reference" "D2"
+			(at 175.26 35.4898 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 175.26 38.0298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
+			(at 162.56 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5149201.pdf"
+			(at 163.83 51.435 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 161.29 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b28dcfb9-0378-4ed2-8589-a4abd24542b4")
+		)
+		(pin "1"
+			(uuid "8cbdfdff-6c1d-40e6-aab3-42135596dda9")
+		)
+		(pin "3"
+			(uuid "5083de2d-dfc9-4d80-a561-fcadf6d415bc")
+		)
+		(pin "4"
+			(uuid "2f13c053-5dd6-4e68-b980-fca74a99a514")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 215.9 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9134871d-2f7f-4b05-88a7-addad6b41993")
+		(property "Reference" "#PWR02"
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 215.9 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 215.9 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "899e261f-0308-4759-8ed7-d24a23e2a810")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 248.92 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91999b33-12dc-4764-be24-2618709183c7")
+		(property "Reference" "#FLG03"
+			(at 248.92 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 248.92 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 248.92 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "058c0a8b-dbf5-454a-8063-4e35f19d6984")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 38.1 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "957661f8-feff-453d-82ea-221b3f14043a")
+		(property "Reference" "#PWR07"
+			(at 38.1 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 38.1 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 38.1 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c152c5ab-3e65-4ee4-bea5-993244e6cdda")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 60.96 170.18 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "991e0199-a12e-4a24-a14f-9eb7636e1be8")
+		(property "Reference" "J8"
+			(at 60.96 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED8"
+			(at 60.96 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 60.96 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 60.96 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4436c808-0268-4ba3-8b6d-bad69b9bcf01")
+		)
+		(pin "1"
+			(uuid "76abf22e-6a81-450a-a7c2-7718b64afd19")
+		)
+		(pin "2"
+			(uuid "4fda92f6-ca9b-41be-9d02-6510f9cc45a3")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 106.68 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a2169b7-868e-40a4-a46f-2af95cbfb014")
+		(property "Reference" "#PWR031"
+			(at 106.68 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 106.68 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 106.68 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9f69d50-abb7-494b-b938-6211d0e67c5d")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 242.57 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a323ffb6-df8a-4e3a-8415-8a376883bc72")
+		(property "Reference" "SW2"
+			(at 242.57 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 242.57 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
+			(at 242.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 242.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 242.57 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e81a6c13-0495-47ec-9eb6-e354bfb2bce5")
+		)
+		(pin "2"
+			(uuid "6cf87246-35c0-4cd6-b177-70c1fd3a3c49")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 234.95 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4ebd259-3ee7-450d-aeae-f18fe9912f75")
+		(property "Reference" "#PWR04"
+			(at 234.95 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44e02f5f-0323-44bf-83f5-70779bf7bfd0")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 38.1 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6be33f2-e1be-4242-acc2-987e75a8bf7e")
+		(property "Reference" "#PWR019"
+			(at 38.1 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 38.1 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 38.1 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83ba45fb-0f62-439d-9f88-5278166469d3")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Seeed_Studio_XIAO_Series:XIAO-ESP32-C6-SMD")
 		(at 176.53 82.55 0)
@@ -2409,7 +7330,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 185.42 116.84 0)
+		(at 201.93 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2418,9 +7339,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4cb3f93f-9432-4ced-9572-100e53bd1f7f")
-		(property "Reference" "#PWR01"
-			(at 185.42 123.19 0)
+		(uuid "a8136601-d136-48fa-b8bb-27b0d0f372b6")
+		(property "Reference" "#PWR028"
+			(at 201.93 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2431,7 +7352,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 121.92 0)
+			(at 201.93 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2441,7 +7362,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 116.84 0)
+			(at 201.93 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2452,7 +7373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 116.84 0)
+			(at 201.93 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2463,7 +7384,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 116.84 0)
+			(at 201.93 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2474,70 +7395,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "eb7a4b52-41fc-4696-8c18-e875936055a0")
+			(uuid "1f1e84e1-3420-432a-b0e7-77de063dbf6e")
 		)
 		(instances
 			(project "ledbox"
 				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR01")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 185.42 104.14) (xy 185.42 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6397916-7170-4525-b2d6-a40c82bc3120")
-	)
-	(wire
-		(pts
-			(xy 207.01 74.93) (xy 215.9 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a1ae7bb-0e78-402d-b3e4-5e4d80f8ee23")
-	)
-	(wire
-		(pts
-			(xy 215.9 67.31) (xy 215.9 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2b02858-0ef1-4c24-b360-1791f9dc5195")
-	)
-	(wire
-		(pts
-			(xy 226.06 67.31) (xy 226.06 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0164b65b-f55e-4c5d-adbf-3f0cbcf6350c")
-	)
-	(wire
-		(pts
-			(xy 207.01 82.55) (xy 226.06 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4764481-9c21-4e46-a571-41a994764635")
-	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 215.9 67.31 0)
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 60.96 133.35 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2546,9 +7418,176 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9134871d-2f7f-4b05-88a7-addad6b41993")
-		(property "Reference" "#PWR02"
-			(at 215.9 71.12 0)
+		(uuid "af949148-f451-4aea-9fa2-1ba5e58ba8af")
+		(property "Reference" "J6"
+			(at 60.96 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED6"
+			(at 60.96 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 60.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 60.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "d0e56f07-813c-4139-833e-1463eb5e21f3")
+		)
+		(pin "1"
+			(uuid "f9058322-5a06-4ddb-849e-2ca96ce07a6a")
+		)
+		(pin "2"
+			(uuid "dccd8d3e-efe9-4e4b-9fc8-e8ab352cdbe1")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 29.21 133.35 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b020c3b3-7bdd-4891-ad9d-586d0e6afc15")
+		(property "Reference" "J3"
+			(at 29.21 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED3"
+			(at 29.21 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 29.21 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 29.21 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "5c2cd27e-3af4-44f4-9b2e-3e9bd871c6d4")
+		)
+		(pin "1"
+			(uuid "ee15dab3-8eb4-4e50-9e0b-83d0d6bfec9e")
+		)
+		(pin "2"
+			(uuid "70181433-cd33-4b3e-939a-f26b9d4609b0")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 198.12 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0cebc37-820f-4744-9e45-58d93d5073f5")
+		(property "Reference" "#PWR026"
+			(at 198.12 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2559,7 +7598,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 215.9 62.23 0)
+			(at 198.12 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2569,7 +7608,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 67.31 0)
+			(at 198.12 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2580,7 +7619,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 67.31 0)
+			(at 198.12 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2591,7 +7630,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 215.9 67.31 0)
+			(at 198.12 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2602,20 +7641,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "899e261f-0308-4759-8ed7-d24a23e2a810")
+			(uuid "d93e8ddc-7376-4e3a-aab0-4374e7642c9b")
 		)
 		(instances
 			(project "ledbox"
 				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR02")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 226.06 67.31 0)
+		(lib_id "power:+5V")
+		(at 69.85 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2624,9 +7663,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4ff9a15e-7a37-4486-a0a0-d0401cd555f9")
-		(property "Reference" "#PWR03"
-			(at 226.06 71.12 0)
+		(uuid "c1a2b6a7-3afe-40da-9de5-7a743b1efc9e")
+		(property "Reference" "#PWR013"
+			(at 69.85 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2636,8 +7675,8 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 226.06 62.23 0)
+		(property "Value" "+5V"
+			(at 69.85 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2647,7 +7686,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 67.31 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2658,7 +7697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 67.31 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2668,8 +7707,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 226.06 67.31 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2680,12 +7719,649 @@
 			)
 		)
 		(pin "1"
-			(uuid "fba71d9c-5c73-4dbd-bf92-26792ac4b8b5")
+			(uuid "e64116de-6cd5-4e8e-bd2c-2a99055de45b")
 		)
 		(instances
 			(project "ledbox"
 				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR03")
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 147.32 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c70f4374-1473-4919-86c3-09ad2c565669")
+		(property "Reference" "#PWR018"
+			(at 147.32 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 147.32 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1aad2273-85f6-4a27-ad82-20bc9e594c1d")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 234.95 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8670248-fbc8-42a3-9e93-cebd347fe94b")
+		(property "Reference" "#FLG02"
+			(at 234.95 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 234.95 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 234.95 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be8190cd-14fc-438d-a137-c44a98312c7b")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 201.93 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9b56a0e-0539-4f1a-a166-0108e2c30510")
+		(property "Reference" "TP3"
+			(at 204.47 37.3379 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND1"
+			(at 204.47 39.8779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+			(at 207.01 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 201.93 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "967391d5-656a-46c6-8b4f-f3035b388c52")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 69.85 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cea91c12-d192-4c77-8c74-d599221e7c2b")
+		(property "Reference" "#PWR011"
+			(at 69.85 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 69.85 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 69.85 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9ad2d9c5-26cf-428b-82f8-ecb8aa2c187b")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 29.21 68.58 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cedb656c-d580-4404-b45f-e5ca6702fb66")
+		(property "Reference" "J1"
+			(at 29.21 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED1"
+			(at 29.21 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 29.21 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 29.21 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "d8007b60-314f-4473-902f-a94239c13663")
+		)
+		(pin "1"
+			(uuid "f23cf148-55bd-4d20-9658-73425422b960")
+		)
+		(pin "2"
+			(uuid "99aa548e-ab74-4f3a-a336-8920473fe85c")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 29.21 170.18 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cef76e93-d976-4557-863c-fe22e2e23e90")
+		(property "Reference" "J7"
+			(at 29.21 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED7"
+			(at 29.21 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 29.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 29.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "e52bbd72-1909-4e62-9a13-165d82ecb763")
+		)
+		(pin "1"
+			(uuid "a8a70530-f326-4347-af23-63b7f94595d1")
+		)
+		(pin "2"
+			(uuid "8ed611f3-10b9-435b-b2de-d66466cfe37b")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 214.63 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d85e49db-6fd9-4d61-b927-c3864c71ad28")
+		(property "Reference" "#PWR027"
+			(at 214.63 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 214.63 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 214.63 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "500079f3-6624-47d4-bdeb-8ea444fc64d7")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 69.85 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da746702-ed8a-4020-a217-436a6913c035")
+		(property "Reference" "#PWR021"
+			(at 69.85 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 69.85 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 69.85 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9eab6011-baf9-4b5f-a695-ac0dd329e3c1")
+		)
+		(instances
+			(project "ledbox"
+				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -2769,1899 +8445,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 208.28 66.04) (xy 208.28 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ea99051-f9a6-455b-93ab-62d462cc6de8")
-	)
-	(wire
-		(pts
-			(xy 208.28 69.85) (xy 215.9 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9245e060-0ecf-417a-a730-415bbc7e3c90")
-	)
-	(wire
-		(pts
-			(xy 215.9 69.85) (xy 215.9 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6f72442-8c0b-45aa-adab-e2402bac8e55")
-	)
-	(junction
-		(at 215.9 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fada48c9-7c3f-4d63-af29-f8cedb56187b")
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 234.95 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8670248-fbc8-42a3-9e93-cebd347fe94b")
-		(property "Reference" "#FLG02"
-			(at 234.95 65.405 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 234.95 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 234.95 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "be8190cd-14fc-438d-a137-c44a98312c7b")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 234.95 67.31) (xy 234.95 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23bcc0c9-45ac-4eb0-9dc9-ee91fdd784dd")
-	)
-	(junction
-		(at 226.06 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "395d78a8-6be3-4cdc-a6a3-eaf010d65139")
-	)
-	(wire
-		(pts
-			(xy 234.95 71.12) (xy 226.06 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48c9a7f7-7133-4157-a814-f7c03465ac48")
-	)
-	(wire
-		(pts
-			(xy 226.06 71.12) (xy 226.06 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e69ede79-441f-4107-9b49-e60d73f1139c")
-	)
-	(wire
-		(pts
-			(xy 234.95 78.74) (xy 234.95 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05b5c465-db78-4662-b858-c14d3be303fc")
-	)
-	(wire
-		(pts
-			(xy 207.01 78.74) (xy 234.95 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5393018b-e5c4-419e-a5b5-0988f521648a")
-	)
 	(symbol
 		(lib_id "power:GND")
-		(at 234.95 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4ebd259-3ee7-450d-aeae-f18fe9912f75")
-		(property "Reference" "#PWR04"
-			(at 234.95 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 234.95 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "44e02f5f-0323-44bf-83f5-70779bf7bfd0")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(no_connect
-		(at 195.58 63.5)
-		(uuid "e0438dc0-3b29-4013-a74f-0418ef178260")
-	)
-	(no_connect
-		(at 180.34 63.5)
-		(uuid "df902dbe-9857-408a-8952-79b5a020cfa2")
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 59.69 69.85 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cedb656c-d580-4404-b45f-e5ca6702fb66")
-		(property "Reference" "J1"
-			(at 59.69 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED1"
-			(at 59.69 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 59.69 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 59.69 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "d8007b60-314f-4473-902f-a94239c13663")
-		)
-		(pin "1"
-			(uuid "f23cf148-55bd-4d20-9658-73425422b960")
-		)
-		(pin "2"
-			(uuid "99aa548e-ab74-4f3a-a336-8920473fe85c")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 68.58 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61cf36aa-4927-4406-ab95-a32b816ca325")
-		(property "Reference" "#PWR05"
-			(at 68.58 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.58 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8c4cefa0-7cae-45a9-9895-ba2f121d8b22")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 68.58 72.39) (xy 64.77 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "592e4205-c2dc-4be7-8862-bb24d1e09e2d")
-	)
-	(wire
-		(pts
-			(xy 68.58 77.47) (xy 68.58 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cead8160-6faf-4b4f-898f-e372655266a6")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 68.58 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42bf577f-df6f-4f73-9cef-b10a4185fb1d")
-		(property "Reference" "#PWR06"
-			(at 68.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 68.58 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 68.58 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c2baccc1-2d00-46d8-8317-b3f2ccb26f60")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 68.58 59.69) (xy 68.58 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "526250ef-7db7-4912-a016-b1d030f1ae57")
-	)
-	(wire
-		(pts
-			(xy 68.58 67.31) (xy 64.77 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f62b1474-1554-4a97-85a8-eb5b0bc0386c")
-	)
-	(label "LED1"
-		(at 69.85 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5ed73097-d714-4cd5-8299-ae17d62fe091")
-	)
-	(wire
-		(pts
-			(xy 64.77 69.85) (xy 69.85 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46be1c47-e14e-4ec1-9bd2-84dc03d8bee0")
-	)
-	(wire
-		(pts
-			(xy 68.58 105.41) (xy 64.77 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4717178b-a6fd-40d3-9e2a-f3bbcafce392")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 68.58 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e8c0024-50cc-4798-95cb-04ca3cec104b")
-		(property "Reference" "#PWR08"
-			(at 68.58 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.58 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ade7c86f-b060-4416-8ffb-ca823f0c7fcd")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 68.58 92.71) (xy 68.58 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57ade0a8-315b-435c-a0a4-8f06becf0663")
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 59.69 102.87 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5e317673-48be-4219-8953-121e941f7eaa")
-		(property "Reference" "J2"
-			(at 59.69 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED2"
-			(at 59.69 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 59.69 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 59.69 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "8638a659-de16-40d3-812f-5259289c9d1d")
-		)
-		(pin "1"
-			(uuid "58af06e0-f3b2-4a8b-9094-8583f844887c")
-		)
-		(pin "2"
-			(uuid "66271298-32c6-49c7-b1e3-3f16c5e0da95")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 64.77 102.87) (xy 69.85 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6220a165-735e-422e-88f9-58e2f356de5c")
-	)
-	(wire
-		(pts
-			(xy 68.58 110.49) (xy 68.58 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70b39038-5b7f-4a0f-8dfd-74861548c1e9")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 68.58 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "957661f8-feff-453d-82ea-221b3f14043a")
-		(property "Reference" "#PWR07"
-			(at 68.58 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 68.58 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 68.58 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c152c5ab-3e65-4ee4-bea5-993244e6cdda")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 68.58 100.33) (xy 64.77 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aff93771-ccee-44d0-99a2-43d3d9c14a5e")
-	)
-	(label "LED2"
-		(at 69.85 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c6e01001-d3ad-4da0-8b90-7265a96cfacf")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 68.58 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "23093db0-5b11-45dc-bb53-0184b897b92d")
-		(property "Reference" "#PWR09"
-			(at 68.58 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 68.58 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 68.58 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca9ebb81-c511-4dd9-831c-0b48e09be5c4")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "LED3"
-		(at 69.85 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4d832070-0475-4a52-975b-f7870bc08ac0")
-	)
-	(wire
-		(pts
-			(xy 64.77 134.62) (xy 69.85 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "741b774f-f6fe-4b60-95ac-56b8ae6c67f6")
-	)
-	(wire
-		(pts
-			(xy 68.58 142.24) (xy 68.58 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a4615c0-de81-4a2c-862e-a538d7e6d710")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 68.58 142.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c89c770-8548-4975-9217-20b86fc11ee4")
-		(property "Reference" "#PWR010"
-			(at 68.58 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.58 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "51055e3f-82b1-4253-ae23-1e0c6f2ea476")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 68.58 132.08) (xy 64.77 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9512837d-f893-4b18-8c01-634a9b88c9e3")
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 59.69 134.62 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b020c3b3-7bdd-4891-ad9d-586d0e6afc15")
-		(property "Reference" "J3"
-			(at 59.69 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED3"
-			(at 59.69 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 59.69 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 59.69 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "5c2cd27e-3af4-44f4-9b2e-3e9bd871c6d4")
-		)
-		(pin "1"
-			(uuid "ee15dab3-8eb4-4e50-9e0b-83d0d6bfec9e")
-		)
-		(pin "2"
-			(uuid "70181433-cd33-4b3e-939a-f26b9d4609b0")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 68.58 137.16) (xy 64.77 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "becfe595-1c04-4c38-8c16-9dc8a4b4b5b0")
-	)
-	(wire
-		(pts
-			(xy 68.58 124.46) (xy 68.58 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4863a5e-f0f6-4b73-a140-45475ff0631a")
-	)
-	(wire
-		(pts
-			(xy 96.52 134.62) (xy 101.6 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c9c6fb5-9062-43a2-927d-cc01baa14467")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 100.33 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13d16523-0d16-4408-a81f-da287435df66")
-		(property "Reference" "#PWR015"
-			(at 100.33 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 100.33 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 100.33 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "26984823-4d37-4b4c-9118-9702980fac7f")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 100.33 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1615e1cc-42c8-4997-852c-ba1231449ba4")
-		(property "Reference" "#PWR012"
-			(at 100.33 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 100.33 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d4f12af1-e918-45bd-913f-a3a43ef7404b")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 100.33 72.39) (xy 96.52 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2815ee35-d650-41cc-b848-338ac5f16108")
-	)
-	(wire
-		(pts
-			(xy 100.33 59.69) (xy 100.33 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3223b4c0-5fe4-4174-a252-df6e5502cb95")
-	)
-	(wire
-		(pts
-			(xy 100.33 124.46) (xy 100.33 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3518e094-0863-429e-b3d0-c6051a44be94")
-	)
-	(wire
-		(pts
-			(xy 100.33 137.16) (xy 96.52 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "423f4445-95ba-4462-9b63-4ecc99e45a53")
-	)
-	(label "LED5"
-		(at 101.6 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "56d2340c-64e2-4cea-ab40-2a9b3d4346a3")
-	)
-	(wire
-		(pts
-			(xy 100.33 100.33) (xy 96.52 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "633e337a-ccce-4def-8d50-54cdb61fc9f1")
-	)
-	(wire
-		(pts
-			(xy 100.33 77.47) (xy 100.33 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "664ee70c-434a-4c10-8119-29e3efbc237e")
-	)
-	(label "LED4"
-		(at 101.6 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "67b452ec-9761-4155-933c-2a86e995662a")
-	)
-	(wire
-		(pts
-			(xy 100.33 105.41) (xy 96.52 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f487d1f-14c4-4782-96bc-73dfdca4722b")
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 91.44 102.87 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7834b7bd-e959-4ce6-a74d-c804c7cfc25d")
-		(property "Reference" "J5"
-			(at 91.44 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED5"
-			(at 91.44 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 91.44 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 91.44 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "33edfe95-0437-4089-a487-84e09afac994")
-		)
-		(pin "1"
-			(uuid "82696ee8-ce2a-4d9d-b934-62ace6812cc2")
-		)
-		(pin "2"
-			(uuid "26924bcc-276b-443d-ba29-05557e2f3381")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 96.52 102.87) (xy 101.6 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83a2de34-10b6-4b09-ab02-12549e757a30")
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 91.44 69.85 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8df2fb81-3f21-4add-a981-b94b8c0b247d")
-		(property "Reference" "J4"
-			(at 91.44 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED4"
-			(at 91.44 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 91.44 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 91.44 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "4b150416-f498-4a65-8a8c-df03be1cb519")
-		)
-		(pin "1"
-			(uuid "793ba7a9-5ff6-4edd-8b3f-5667cc312438")
-		)
-		(pin "2"
-			(uuid "b4872e1b-c609-4d8f-ba07-2dfd0de0cafb")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "LED6"
-		(at 101.6 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8fcd8b6f-03ea-4106-85f2-655a871639ca")
-	)
-	(wire
-		(pts
-			(xy 100.33 110.49) (xy 100.33 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "939568fd-dc47-4392-b3b4-555c156ebecb")
-	)
-	(wire
-		(pts
-			(xy 100.33 132.08) (xy 96.52 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aafb8e05-8313-4032-833d-b9b4ae097995")
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 91.44 134.62 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af949148-f451-4aea-9fa2-1ba5e58ba8af")
-		(property "Reference" "J6"
-			(at 91.44 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED6"
-			(at 91.44 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 91.44 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 91.44 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "d0e56f07-813c-4139-833e-1463eb5e21f3")
-		)
-		(pin "1"
-			(uuid "f9058322-5a06-4ddb-849e-2ca96ce07a6a")
-		)
-		(pin "2"
-			(uuid "dccd8d3e-efe9-4e4b-9fc8-e8ab352cdbe1")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 100.33 67.31) (xy 96.52 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b089a1f6-036d-4b4f-87b3-de7e7c47e8b6")
-	)
-	(wire
-		(pts
-			(xy 100.33 142.24) (xy 100.33 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b69eb1f4-1bed-4730-8fb3-1cc6c295dd33")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 100.33 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1a2b6a7-3afe-40da-9de5-7a743b1efc9e")
-		(property "Reference" "#PWR013"
-			(at 100.33 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 100.33 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 100.33 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e64116de-6cd5-4e8e-bd2c-2a99055de45b")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 100.33 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cea91c12-d192-4c77-8c74-d599221e7c2b")
-		(property "Reference" "#PWR011"
-			(at 100.33 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 100.33 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 100.33 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9ad2d9c5-26cf-428b-82f8-ecb8aa2c187b")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 100.33 92.71) (xy 100.33 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4154e11-50c0-4996-8ca0-18665f88d1e1")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 100.33 110.49 0)
+		(at 69.85 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4672,7 +8458,7 @@
 		(fields_autoplaced yes)
 		(uuid "e62dc0e5-0dd7-4b11-809a-2516598830d3")
 		(property "Reference" "#PWR014"
-			(at 100.33 116.84 0)
+			(at 69.85 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4683,7 +8469,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 115.57 0)
+			(at 69.85 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4693,7 +8479,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 110.49 0)
+			(at 69.85 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4704,7 +8490,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 110.49 0)
+			(at 69.85 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4715,7 +8501,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 110.49 0)
+			(at 69.85 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4739,7 +8525,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 142.24 0)
+		(at 69.85 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4750,7 +8536,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecebb631-5132-484b-ace5-6892f80e92cf")
 		(property "Reference" "#PWR016"
-			(at 100.33 148.59 0)
+			(at 69.85 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4761,7 +8547,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 147.32 0)
+			(at 69.85 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4771,7 +8557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 142.24 0)
+			(at 69.85 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4782,7 +8568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 142.24 0)
+			(at 69.85 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4793,7 +8579,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 142.24 0)
+			(at 69.85 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4815,1331 +8601,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 96.52 69.85) (xy 101.6 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed1ba979-0ffd-4bf5-a9f7-7fdd58b91d63")
-	)
-	(symbol
-		(lib_id "LED:SK6812MINI-E")
-		(at 130.81 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f25ab71-0803-45a7-9bd6-6cb022a36882")
-		(property "Reference" "D1"
-			(at 144.78 35.4898 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812MINI-E"
-			(at 144.78 38.0298 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
-			(at 132.08 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5149201.pdf"
-			(at 133.35 51.435 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 130.81 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ba2ff09c-f511-4c90-9aa4-4f6ca7348a44")
-		)
-		(pin "1"
-			(uuid "8a78e3a2-66ec-43d5-a16e-d693bca2185c")
-		)
-		(pin "3"
-			(uuid "406653fc-0cac-493b-ba80-a520e86840b0")
-		)
-		(pin "4"
-			(uuid "ebe75fc8-4b5e-4c1f-8366-c740e40ada12")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812MINI-E")
-		(at 161.29 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f1e4016-8d89-4e85-8e25-9e7b824dd353")
-		(property "Reference" "D2"
-			(at 175.26 35.4898 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812MINI-E"
-			(at 175.26 38.0298 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
-			(at 162.56 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5149201.pdf"
-			(at 163.83 51.435 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 161.29 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b28dcfb9-0378-4ed2-8589-a4abd24542b4")
-		)
-		(pin "1"
-			(uuid "8cbdfdff-6c1d-40e6-aab3-42135596dda9")
-		)
-		(pin "3"
-			(uuid "5083de2d-dfc9-4d80-a561-fcadf6d415bc")
-		)
-		(pin "4"
-			(uuid "2f13c053-5dd6-4e68-b980-fca74a99a514")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 147.32 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "087ad1fd-9f7d-4db0-9564-c854a0d3a110")
-		(property "Reference" "#PWR017"
-			(at 147.32 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 147.32 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 147.32 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f8ebe94-d6e2-405a-9f24-a30d71e89d06")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 147.32 27.94) (xy 130.81 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c30b892-c5c2-48de-8283-608451a89823")
-	)
-	(wire
-		(pts
-			(xy 130.81 27.94) (xy 130.81 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6eb73e5-72c3-49bd-ba5b-20d306302207")
-	)
-	(wire
-		(pts
-			(xy 161.29 34.29) (xy 161.29 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e0edf85-3768-4a64-8b6d-940006decedf")
-	)
-	(junction
-		(at 147.32 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "820e4c39-0158-4fce-be7a-01a5078c0ab5")
-	)
-	(wire
-		(pts
-			(xy 161.29 27.94) (xy 147.32 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d974c831-0401-4343-a4c8-7c10181fc1b2")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 147.32 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c70f4374-1473-4919-86c3-09ad2c565669")
-		(property "Reference" "#PWR018"
-			(at 147.32 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 147.32 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1aad2273-85f6-4a27-ad82-20bc9e594c1d")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 147.32 49.53) (xy 147.32 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d145fff-25d3-4e3a-ab41-935e091e2174")
-	)
-	(wire
-		(pts
-			(xy 161.29 49.53) (xy 147.32 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b76c5f36-88c9-4d41-868c-a249a474509b")
-	)
-	(wire
-		(pts
-			(xy 130.81 49.53) (xy 147.32 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65b81f83-8aec-4c48-a2ed-976958c70312")
-	)
-	(junction
-		(at 147.32 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d368b0cc-fd86-4ee3-9d11-e8072226d71f")
-	)
-	(wire
-		(pts
-			(xy 138.43 41.91) (xy 153.67 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f3e169c-8e97-4bdb-8a77-6fa106b07da3")
-	)
-	(label "STATUS_LED"
-		(at 109.22 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3436a93f-881f-44cd-bca0-b6dfb1a991f8")
-	)
-	(wire
-		(pts
-			(xy 109.22 41.91) (xy 123.19 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "332512de-d3b7-44a5-a570-f9c86d151a0e")
-	)
-	(no_connect
-		(at 184.15 63.5)
-		(uuid "90e627c8-c89c-4dec-8067-d98d976f4fb3")
-	)
-	(no_connect
-		(at 187.96 63.5)
-		(uuid "cc11ecd4-4bfe-421c-b3ad-7e6622cc9846")
-	)
-	(no_connect
-		(at 191.77 63.5)
-		(uuid "dc3d128c-dbef-4278-a9cf-d653af9f27e4")
-	)
-	(no_connect
-		(at 176.53 63.5)
-		(uuid "4156b0a7-1196-45e0-b113-d6055a53787e")
-	)
-	(no_connect
-		(at 172.72 63.5)
-		(uuid "8071a97e-c615-4c09-8449-3f25a2b9bbeb")
-	)
-	(no_connect
-		(at 168.91 63.5)
-		(uuid "702a799a-bbea-45e5-86d5-a64b25f3b0d9")
-	)
-	(wire
-		(pts
-			(xy 219.71 86.36) (xy 207.01 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17ded311-8302-4375-af32-c92bf6050ac8")
-	)
-	(label "STATUS_LED"
-		(at 219.71 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7bbc2efe-7756-4661-9e3f-bf78fc5d7b67")
-	)
-	(wire
-		(pts
-			(xy 100.33 161.29) (xy 100.33 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06d2f194-3972-4256-b306-3f462c7dfe89")
-	)
-	(wire
-		(pts
-			(xy 100.33 173.99) (xy 96.52 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c32ad2f-785b-4bd5-85c3-9e1491b4dc12")
-	)
-	(wire
-		(pts
-			(xy 68.58 173.99) (xy 64.77 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20d7c965-d15b-4fd4-bcce-ad1fffbdf76e")
-	)
-	(wire
-		(pts
-			(xy 68.58 161.29) (xy 68.58 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "422689db-fe8c-48a4-8344-2eca0ad4c1ce")
-	)
-	(label "LED7"
-		(at 69.85 171.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "54b99631-9fbb-4e87-842f-a1336189a9c6")
-	)
-	(wire
-		(pts
-			(xy 68.58 168.91) (xy 64.77 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73695f6b-684b-4800-b2f2-75ec991f927a")
-	)
-	(label "LED8"
-		(at 101.6 171.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7f4d70f2-fd0e-426d-bb86-36141e80be25")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 68.58 179.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8224f390-8916-47ed-aebb-07d22586efbf")
-		(property "Reference" "#PWR020"
-			(at 68.58 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.58 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bc049b43-4c15-436f-8f7c-139537e489fe")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 100.33 179.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89a68dc8-4d8d-4f62-abe3-7a301ec9342f")
-		(property "Reference" "#PWR022"
-			(at 100.33 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 100.33 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bba76bb2-144b-498b-807d-134d19801729")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 64.77 171.45) (xy 69.85 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fa4035e-db18-4cb9-993c-627a87d2d715")
-	)
-	(wire
-		(pts
-			(xy 100.33 168.91) (xy 96.52 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "954b1a18-a224-4649-af27-6fe88d2200f3")
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 91.44 171.45 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "991e0199-a12e-4a24-a14f-9eb7636e1be8")
-		(property "Reference" "J8"
-			(at 91.44 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED8"
-			(at 91.44 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 91.44 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 91.44 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "4436c808-0268-4ba3-8b6d-bad69b9bcf01")
-		)
-		(pin "1"
-			(uuid "76abf22e-6a81-450a-a7c2-7718b64afd19")
-		)
-		(pin "2"
-			(uuid "4fda92f6-ca9b-41be-9d02-6510f9cc45a3")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 100.33 179.07) (xy 100.33 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99cd26d5-45df-4fea-87b3-b193fb0abc58")
-	)
-	(wire
-		(pts
-			(xy 68.58 179.07) (xy 68.58 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d4c703d-5307-4a40-b922-4d58237a9bc5")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 68.58 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6be33f2-e1be-4242-acc2-987e75a8bf7e")
-		(property "Reference" "#PWR019"
-			(at 68.58 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 68.58 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 68.58 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "83ba45fb-0f62-439d-9f88-5278166469d3")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 59.69 171.45 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cef76e93-d976-4557-863c-fe22e2e23e90")
-		(property "Reference" "J7"
-			(at 59.69 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED7"
-			(at 59.69 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
-			(at 59.69 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 59.69 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "e52bbd72-1909-4e62-9a13-165d82ecb763")
-		)
-		(pin "1"
-			(uuid "a8a70530-f326-4347-af23-63b7f94595d1")
-		)
-		(pin "2"
-			(uuid "8ed611f3-10b9-435b-b2de-d66466cfe37b")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 100.33 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da746702-ed8a-4020-a217-436a6913c035")
-		(property "Reference" "#PWR021"
-			(at 100.33 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 100.33 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 100.33 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9eab6011-baf9-4b5f-a695-ac0dd329e3c1")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 96.52 171.45) (xy 101.6 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e71d9cf4-215d-45e4-91e9-9a5e052ab307")
-	)
-	(symbol
-		(lib_id "Logic_LevelTranslator:TXS0108EPW")
-		(at 128.27 87.63 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "67db6fe9-5bd7-4888-bce1-8e48e9ef66de")
-		(property "Reference" "U2"
-			(at 126.1267 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TXS0108EPW"
-			(at 126.1267 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 128.27 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "www.ti.com/lit/ds/symlink/txs0108e.pdf"
-			(at 128.27 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Bidirectional  level-shifting voltage translator, TSSOP-20"
-			(at 128.27 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "10"
-			(uuid "c9ae0005-605f-40c3-bce0-9c1d26dd572a")
-		)
-		(pin "11"
-			(uuid "5d2a1df3-3f52-4bdf-a982-81b5f780a170")
-		)
-		(pin "5"
-			(uuid "c1848c69-12d4-4f9c-8808-9a6b05e778de")
-		)
-		(pin "6"
-			(uuid "88563489-b30a-4c13-bd1b-493f68fb735a")
-		)
-		(pin "7"
-			(uuid "00b85cd1-517b-48ef-ac04-5b1a2290030f")
-		)
-		(pin "4"
-			(uuid "106b209a-91a3-486e-a8f3-ef6dc3887788")
-		)
-		(pin "3"
-			(uuid "b47cc3ef-0c4a-49d8-9c0c-ae1a6ad898fc")
-		)
-		(pin "1"
-			(uuid "ef48ec66-9ae4-4f13-bcb4-d2f8d6fc7ef8")
-		)
-		(pin "2"
-			(uuid "406d5d32-eefb-4cf5-984c-93156ead178b")
-		)
-		(pin "9"
-			(uuid "67145c81-1f2e-4a06-a2fe-7b3aec4f1ce3")
-		)
-		(pin "8"
-			(uuid "02ec0152-8b01-49b2-9e0b-ba23e1be9536")
-		)
-		(pin "20"
-			(uuid "7a84f97d-4dc2-439f-ac59-a20510f6d710")
-		)
-		(pin "19"
-			(uuid "bdf9908c-ceb4-4903-bfe5-d645820d640f")
-		)
-		(pin "18"
-			(uuid "0196e7c7-4faf-4500-a6ac-908f6b483f07")
-		)
-		(pin "17"
-			(uuid "81817145-7e14-41ae-9390-e2eb058e8e4d")
-		)
-		(pin "16"
-			(uuid "bed4d5e6-c150-4641-9d20-3dc415b5673f")
-		)
-		(pin "15"
-			(uuid "f3419b34-eec3-4488-a55d-12c253515e66")
-		)
-		(pin "14"
-			(uuid "5d932da6-c76b-4cb5-9b32-27bc473940be")
-		)
-		(pin "13"
-			(uuid "439ba3b6-7727-431d-9c23-e64de75c377a")
-		)
-		(pin "12"
-			(uuid "5528394a-fe34-4953-85cb-ae007d8293f1")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 128.27 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76465307-7106-4751-b3bd-cc55182a4cdb")
-		(property "Reference" "#PWR023"
-			(at 128.27 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 128.27 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "64ae10f5-7d96-4a11-b9c4-5a16032492fb")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 128.27 105.41) (xy 128.27 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c031b85-0456-473d-9bdd-9d87ed797f07")
-	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 130.81 64.77 0)
+		(at 87.63 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6148,9 +8612,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "551ba663-b133-4a03-9593-5aefddff230e")
-		(property "Reference" "#PWR024"
-			(at 130.81 68.58 0)
+		(uuid "f9821395-7914-4693-aa16-ad6f9110c126")
+		(property "Reference" "#PWR032"
+			(at 87.63 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6161,7 +8625,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 130.81 59.69 0)
+			(at 87.63 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6171,7 +8635,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 64.77 0)
+			(at 87.63 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +8646,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 64.77 0)
+			(at 87.63 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6193,7 +8657,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 130.81 64.77 0)
+			(at 87.63 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6204,1473 +8668,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "c4e4d1a6-e251-499c-b81d-9406d95f107e")
+			(uuid "c70fdb09-67d1-4b61-b3e1-27973b146ba0")
 		)
 		(instances
 			(project "ledbox"
 				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR024")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 130.81 64.77) (xy 130.81 67.31)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff67b41c-76bb-48f1-96ec-66d6e49be487")
-	)
-	(wire
-		(pts
-			(xy 111.76 95.25) (xy 118.11 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07b1688a-4841-44e1-b3b6-7dd26640b84d")
-	)
-	(label "LED8"
-		(at 111.76 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ce3e02a-7f7e-4ec2-b4e3-cda8232f6faa")
-	)
-	(label "LED2"
-		(at 111.76 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "116475df-5f1b-4800-a8dc-0e60bf7fc3b9")
-	)
-	(label "LED6"
-		(at 111.76 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "17c0bce6-0b54-4bd3-b367-c4a3da4100e3")
-	)
-	(wire
-		(pts
-			(xy 111.76 87.63) (xy 118.11 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23729e4b-2e71-42fe-b728-3db3a743f619")
-	)
-	(wire
-		(pts
-			(xy 111.76 85.09) (xy 118.11 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62ac44b4-40b0-4548-8a45-d3622d48f84d")
-	)
-	(wire
-		(pts
-			(xy 111.76 82.55) (xy 118.11 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "764c29a1-b595-425a-9158-04c40b7e3f9b")
-	)
-	(wire
-		(pts
-			(xy 118.11 97.79) (xy 111.76 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f774f43-682e-4c6e-a6fb-69d488e0cea7")
-	)
-	(wire
-		(pts
-			(xy 111.76 92.71) (xy 118.11 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96f4ea21-a2cf-4939-aa31-546a626e843b")
-	)
-	(wire
-		(pts
-			(xy 111.76 80.01) (xy 118.11 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a152c9b7-2469-42c6-8c11-736aadf8e80f")
-	)
-	(label "LED1"
-		(at 111.76 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a45a4557-ee96-4318-8611-8daaf1be7228")
-	)
-	(label "LED3"
-		(at 111.76 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a937b803-4dd9-4739-af0a-dbf4a31274d0")
-	)
-	(label "LED4"
-		(at 111.76 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c40298aa-2e75-4b20-ae14-16a11e77ade7")
-	)
-	(label "LED5"
-		(at 111.76 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8ad1058-f769-4d8c-a615-87b777c79155")
-	)
-	(label "LED7"
-		(at 111.76 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cdf6c6f8-f63b-4d72-8e96-664772848400")
-	)
-	(wire
-		(pts
-			(xy 111.76 90.17) (xy 118.11 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3726f12-2b25-4692-85ec-486511f088db")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 125.73 64.77 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "443eea38-41ec-436a-ba55-6cba51b9ca76")
-		(property "Reference" "#PWR025"
-			(at 125.73 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 125.73 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 125.73 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "458da91a-3c1c-4744-ae14-ebff042b0b14")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 125.73 64.77) (xy 125.73 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19686d88-4f7e-4507-a5e4-f0512b4cdc83")
-	)
-	(wire
-		(pts
-			(xy 138.43 77.47) (xy 139.7 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58f49e75-8b3c-46a4-8b81-2147c8b45f8f")
-	)
-	(wire
-		(pts
-			(xy 139.7 77.47) (xy 139.7 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a37fb74e-3e5d-4b02-91dc-b6882e84bed7")
-	)
-	(junction
-		(at 130.81 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a49722e3-0b3e-4223-9a43-f5e6260ade1d")
-	)
-	(wire
-		(pts
-			(xy 130.81 67.31) (xy 130.81 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba72299f-29d5-42be-9e20-5099d2d2340a")
-	)
-	(wire
-		(pts
-			(xy 139.7 67.31) (xy 130.81 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8072ee8-4ab0-4018-8195-b09c0f6bdea0")
-	)
-	(wire
-		(pts
-			(xy 142.24 80.01) (xy 142.24 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16f4e133-567d-4e62-9a67-229d82d9e1eb")
-	)
-	(wire
-		(pts
-			(xy 142.24 74.93) (xy 161.29 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99190dd7-e8c7-469c-8d1a-97e1fe4a0dec")
-	)
-	(wire
-		(pts
-			(xy 138.43 80.01) (xy 142.24 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d58e712c-2223-4994-8583-5189610bef3d")
-	)
-	(wire
-		(pts
-			(xy 161.29 78.74) (xy 143.51 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72547071-cd5a-45ba-b715-8c9e56c13560")
-	)
-	(wire
-		(pts
-			(xy 143.51 78.74) (xy 143.51 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1d0aaf2-f209-4361-9097-6cd3007e99a9")
-	)
-	(wire
-		(pts
-			(xy 143.51 82.55) (xy 138.43 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c38f915c-2576-46cd-a1a2-8c1228756d94")
-	)
-	(wire
-		(pts
-			(xy 146.05 82.55) (xy 161.29 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "015b0a5a-b604-448c-a69b-11010151a835")
-	)
-	(wire
-		(pts
-			(xy 138.43 85.09) (xy 146.05 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0315fa1-ca1c-494a-a9f4-0564cf9f1964")
-	)
-	(wire
-		(pts
-			(xy 146.05 85.09) (xy 146.05 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdfa5844-773f-402c-874f-a442e685cb88")
-	)
-	(wire
-		(pts
-			(xy 138.43 86.36) (xy 138.43 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a1746c6-d197-4119-8ad4-4dc26c2d0b73")
-	)
-	(wire
-		(pts
-			(xy 161.29 86.36) (xy 138.43 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d663368b-fc5b-4858-a193-f1e1badff93c")
-	)
-	(wire
-		(pts
-			(xy 138.43 90.17) (xy 161.29 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8870e6a-2757-4778-8b44-50d8c1b0719c")
-	)
-	(wire
-		(pts
-			(xy 138.43 92.71) (xy 161.29 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e99c2cb-fc18-431a-b45a-022b1f3d4c80")
-	)
-	(wire
-		(pts
-			(xy 161.29 92.71) (xy 161.29 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef3430a1-8cef-45f0-bcfd-69a833372afe")
-	)
-	(wire
-		(pts
-			(xy 138.43 95.25) (xy 161.29 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9ab43f8-e1f5-4e31-9016-392801968b8c")
-	)
-	(wire
-		(pts
-			(xy 161.29 97.79) (xy 161.29 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d58c43c0-0786-4164-835a-31ee09e60197")
-	)
-	(label "A8"
-		(at 144.78 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4ae642f7-8813-44af-81ac-47901e97f1d3")
-	)
-	(wire
-		(pts
-			(xy 138.43 97.79) (xy 144.78 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2e24c60-57cf-4658-bb63-9905e11fc2ea")
-	)
-	(label "A8"
-		(at 213.36 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8906e108-61d4-40b4-be39-8f303d2b2ce9")
-	)
-	(wire
-		(pts
-			(xy 207.01 93.98) (xy 213.36 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0d9f2a4-2430-4e8e-9461-827592ee7168")
-	)
-	(no_connect
-		(at 180.34 104.14)
-		(uuid "f3975cb8-b34d-4278-8a67-25304066c8a3")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 201.93 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66de2791-fd79-4221-93e6-68f325c14dd1")
-		(property "Reference" "TP1"
-			(at 204.47 29.7179 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 204.47 32.2579 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
-			(at 207.01 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 201.93 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e5d418df-d952-41ce-9c60-9cb61262116b")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 218.44 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bd983c7-fade-4c63-b11b-580cf7da6680")
-		(property "Reference" "TP2"
-			(at 220.98 29.7179 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 220.98 32.2579 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
-			(at 223.52 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 218.44 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "08c8a495-319d-4b61-8406-475506412cd6")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 201.93 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9b56a0e-0539-4f1a-a166-0108e2c30510")
-		(property "Reference" "TP3"
-			(at 204.47 37.3379 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 204.47 39.8779 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
-			(at 207.01 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 201.93 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "967391d5-656a-46c6-8b4f-f3035b388c52")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 218.44 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4233b861-ad5d-4f70-b674-759e01d1060c")
-		(property "Reference" "TP4"
-			(at 220.98 37.3379 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 220.98 39.8779 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
-			(at 223.52 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 218.44 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "773831f6-b6c2-4a9d-8653-76e8779c5a5c")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 198.12 27.94) (xy 198.12 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46129af1-2f13-4273-ab9a-75c9a5c6838f")
-	)
-	(wire
-		(pts
-			(xy 201.93 34.29) (xy 198.12 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa83f40d-c8fa-40a4-b291-e608c74764d4")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 198.12 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b0cebc37-820f-4744-9e45-58d93d5073f5")
-		(property "Reference" "#PWR026"
-			(at 198.12 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 198.12 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 198.12 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d93e8ddc-7376-4e3a-aab0-4374e7642c9b")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 218.44 34.29) (xy 214.63 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "003a0e69-cd48-4447-845f-ee204b29d475")
-	)
-	(wire
-		(pts
-			(xy 214.63 27.94) (xy 214.63 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9584fc7d-39f4-40fb-9fd1-0a74d786454d")
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 214.63 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d85e49db-6fd9-4d61-b927-c3864c71ad28")
-		(property "Reference" "#PWR027"
-			(at 214.63 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 214.63 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 214.63 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "500079f3-6624-47d4-bdeb-8ea444fc64d7")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 201.93 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8136601-d136-48fa-b8bb-27b0d0f372b6")
-		(property "Reference" "#PWR028"
-			(at 201.93 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 201.93 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f1e84e1-3420-432a-b0e7-77de063dbf6e")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 201.93 45.72) (xy 201.93 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc945260-ff74-4432-a227-f247e817ecfd")
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 224.79 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c6437be-1474-4740-8b64-a8d55705b4aa")
-		(property "Reference" "SW1"
-			(at 224.79 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_45deg"
-			(at 224.79 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
-			(at 224.79 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 224.79 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "31c29760-b9aa-42ea-9e68-6d467835af8b")
-		)
-		(pin "2"
-			(uuid "51414bf6-de75-49ab-b17e-755e9b976c9a")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 242.57 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a323ffb6-df8a-4e3a-8415-8a376883bc72")
-		(property "Reference" "SW2"
-			(at 242.57 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_45deg"
-			(at 242.57 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
-			(at 242.57 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 242.57 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 242.57 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e81a6c13-0495-47ec-9eb6-e354bfb2bce5")
-		)
-		(pin "2"
-			(uuid "6cf87246-35c0-4cd6-b177-70c1fd3a3c49")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 240.03 90.17) (xy 240.03 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c81155d-291f-433d-b32f-0434bdc3d7ab")
-	)
-	(wire
-		(pts
-			(xy 207.01 90.17) (xy 240.03 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3331764d-6555-445b-82de-80dc42b14080")
-	)
-	(wire
-		(pts
-			(xy 207.01 97.79) (xy 222.25 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e14ea77-56b0-4ac6-a396-aa69e85741a8")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 236.22 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "65b77ace-6359-46c3-ab23-8bc701b8ee2d")
-		(property "Reference" "#PWR029"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 236.22 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 236.22 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a7e840f4-4f66-476a-9b6a-d2371aaf6ca0")
-		)
-		(instances
-			(project "ledbox"
-				(path "/c4f50a72-7a7e-44ed-91de-93eaab45a9c0"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 227.33 107.95) (xy 227.33 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa1fb114-9a62-4cd0-8562-769767ade890")
-	)
-	(wire
-		(pts
-			(xy 236.22 107.95) (xy 227.33 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2827491-557d-4761-9414-0afb8b47ba23")
-	)
-	(junction
-		(at 236.22 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3a5e6e7-54eb-41f1-b473-e4c3c31513e6")
-	)
-	(wire
-		(pts
-			(xy 245.11 102.87) (xy 245.11 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8fb92bc-30f2-483f-a321-a3fef4780d17")
-	)
-	(wire
-		(pts
-			(xy 245.11 107.95) (xy 236.22 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ece9543d-1712-42f8-a4d2-7ede63ac5dcc")
-	)
-	(wire
-		(pts
-			(xy 218.44 44.45) (xy 201.93 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02ebb470-0214-488b-b2a7-6137cca09a7e")
-	)
-	(junction
-		(at 201.93 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a935579e-e28a-4aa1-a5b3-442ec0aaf326")
-	)
-	(wire
-		(pts
-			(xy 201.93 44.45) (xy 201.93 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac7495eb-37ab-470b-8b4b-30a1caa4209f")
-	)
-	(wire
-		(pts
-			(xy 218.44 41.91) (xy 218.44 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae276986-068f-4fc3-a8e5-6a9d7bfff98f")
 	)
+	(embedded_fonts no)
 )
